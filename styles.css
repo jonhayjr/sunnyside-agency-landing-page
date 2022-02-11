@@ -6,4 +6,27 @@
 
 header {
     background-image: url('./images/mobile/image-header.jpg');
+    max-width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.nav__hamburger-menu {
+    cursor: pointer;
+}
+
+.nav__hamburger-menu-line {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    opacity: 0.75;
 }
