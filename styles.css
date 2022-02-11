@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
 header {
     background-image: url('./images/mobile/image-header.jpg');
     max-width: 100%;
@@ -21,6 +25,7 @@ header {
 
 .nav__hamburger-menu {
     cursor: pointer;
+    position: relative;
 }
 
 .nav__hamburger-menu-line {
@@ -29,4 +34,41 @@ header {
     background-color: white;
     margin: 6px 0;
     opacity: 0.75;
+}
+
+.nav__list {
+    position: absolute;
+    background-color: white;
+    top: 175px;
+    left: 75px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav__list-item {
+    margin-bottom: 1em;
+}
+
+.nav__link {
+    color: gray;
+    text-decoration: none;
+}
+
+.nav__list-item:last-child {
+    margin-top: 2em;
+}
+
+.nav__link--cta {
+    background-color: yellow;
+    color: black;
+    text-transform: uppercase;
+    padding: 1.25em;
+    border-radius: 20px;
+    font-weight: bold;
 }
