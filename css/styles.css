@@ -3,12 +3,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
 
+/*Style reset*/
 * {
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
+
+/*Variables*/
 :root {
 --clr-soft-red: hsl(7, 99%, 70%);
 --clr-yellow: hsl(51, 100%, 49%);
@@ -23,22 +30,20 @@
 --clr-white: hsl(0, 0%, 100%);
 }
 
-li {
-    list-style: none;
-}
-
 body {
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
 }
 
 
+/*Header*/
 header {
-    background-image: url('../../images/mobile/image-header.jpg');
-    max-width: 100%;
-    height: 700px;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 65vh;
+    background-image: url('../images/mobile/image-header.jpg');
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .nav {
@@ -50,23 +55,40 @@ header {
 
 .nav__hamburger-menu {
     cursor: pointer;
-    position: relative;
+    height: 20px;
+    width: 25px;
+    opacity: 0.75;
 }
 
 .nav__list {
-    position: absolute;
+    position: fixed;
     background-color: white;
-    top: 125px;
+    top: 100px;
     left: 15px;
-    width: 300px;
+    width: calc(100vw - 50px);
     height: 300px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding: 2em;
-    display: none;
+    display: flex; /*Hidden on page load*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 99;
 }
+
+.nav__list::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    top: -20px;
+    border: 10px solid transparent;
+    border-right-color: var(--clr-white);
+    border-bottom-color: var(--clr-white);
+  }
 
 .nav__list-item {
     margin-bottom: 2em;
@@ -85,7 +107,25 @@ header {
     background-color: var(--clr-yellow);
     color: black;
     text-transform: uppercase;
-    padding: 1.25em;
+    padding: 1em 1.25em;
     border-radius: 30px;
     font-weight: bold;
+}
+
+.header__box {
+    text-align: center;
+}
+
+.header__heading {
+    color: var(--clr-white);
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    position: relative;
+    letter-spacing: 5px;
+}
+
+.header__arrow-down {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 300px;
 }
