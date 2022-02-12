@@ -67,7 +67,6 @@ body {
     opacity: 0.75;
     line-height: 1.5;
     width: 85%;
-    font-size: 20px;
 }
 
 .card__link {
@@ -86,6 +85,36 @@ body {
     border-bottom: 5px solid var(--clr-soft-red);
 }
 
+
+.card-with-bg-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.card-with-bg-image__textbox {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: auto;
+}
+
+.card-with-bg-image__heading {
+    font-family: 'Fraunces', sans-serif;
+    margin-bottom: 1em;
+}
+
+.card-with-bg-image__paragraph {
+    color: var(--clr-very-dark-desaturated-blue);
+    opacity: 0.75;
+    line-height: 1.5;
+    font-size: 16px;
+}
 
 /*Header*/
 header {
@@ -192,4 +221,15 @@ header {
 /*Stand Out Section*/
 .stand-out-image {
     background-image: url('../images/mobile/image-stand-out.jpg');
+}
+
+
+/*Graphic Design Section*/
+.graphic-design-image {
+    background-image: url('../images/mobile/image-graphic-design.jpg')
+}
+
+/*Photography Section*/
+.photography-image {
+    background-image: url('../images/mobile/image-photography.jpg');
 }
