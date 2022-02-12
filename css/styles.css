@@ -32,6 +32,7 @@ body {
     font-size: 18px;
 }
 
+
 header {
     background-image: url('../../images/mobile/image-header.jpg');
     max-width: 100%;
@@ -55,13 +56,13 @@ header {
 .nav__list {
     position: absolute;
     background-color: white;
-    top: 175px;
-    left: 75px;
+    top: 125px;
+    left: 15px;
     width: 300px;
     height: 300px;
     text-align: center;
     padding: 2em;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
