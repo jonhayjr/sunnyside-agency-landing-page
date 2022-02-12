@@ -71,7 +71,7 @@ header {
     margin-right: auto;
     text-align: center;
     padding: 2em;
-    display: flex; /*Hidden on page load*/
+    display: none; /*Hidden on page load*/
     justify-content: center;
     align-items: center;
     flex-direction: column;
