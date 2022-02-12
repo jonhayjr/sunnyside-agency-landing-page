@@ -1,0 +1,90 @@
+/*Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+--clr-soft-red: hsl(7, 99%, 70%);
+--clr-yellow: hsl(51, 100%, 49%);
+--clr-dark-desaturated-cyan: hsl(167, 40%, 24%); /*Graphic Design Text*/
+--clr-dark-blue: hsl(198, 62%, 26%); /*Photography Text*/
+--clr-dark-moderate-cyan: hsl(168, 34%, 41%); /*Footer*/
+
+--clr-very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--clr-very-dark-grayish-blue: hsl(213, 9%, 39%);
+--clr-dark-grayish-blue: hsl(232, 10%, 55%);
+--clr-grayish-blue: hsl(210, 4%, 67%);
+--clr-white: hsl(0, 0%, 100%);
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-image: url('../../images/mobile/image-header.jpg');
+    max-width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.nav__hamburger-menu {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav__list {
+    position: absolute;
+    background-color: white;
+    top: 175px;
+    left: 75px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav__list-item {
+    margin-bottom: 2em;
+}
+
+.nav__link {
+    color: var(--clr-grayish-blue);
+    text-decoration: none;
+}
+
+.nav__list-item:last-child {
+    margin-top: 1em;
+}
+
+.nav__link--cta {
+    background-color: var(--clr-yellow);
+    color: black;
+    text-transform: uppercase;
+    padding: 1.25em;
+    border-radius: 30px;
+    font-weight: bold;
+}
