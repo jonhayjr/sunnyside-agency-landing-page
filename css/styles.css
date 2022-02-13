@@ -36,6 +36,11 @@ body {
 }
 
 /*Reusable Styling*/
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
 .background-card-image{
     background-position: center center;
     background-repeat: no-repeat;
@@ -152,9 +157,8 @@ header {
     text-align: center;
     padding: 2em;
     display: none; /*Hidden on page load*/
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
     z-index: 99;
 }
 
@@ -177,6 +181,7 @@ header {
 .nav__link {
     color: var(--clr-grayish-blue);
     text-decoration: none;
+    font-size: 20px;
 }
 
 .nav__list-item:last-child {
