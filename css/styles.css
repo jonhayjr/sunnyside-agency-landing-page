@@ -41,6 +41,10 @@ body {
     flex-direction: column;
 }
 
+.hidden {
+    display: none;
+}
+
 .background-card-image{
     background-position: center center;
     background-repeat: no-repeat;
@@ -156,7 +160,6 @@ header {
     margin-right: auto;
     text-align: center;
     padding: 2em;
-    display: none; /*Hidden on page load*/
     justify-content: space-between;
     align-items: center;
     z-index: 99;
