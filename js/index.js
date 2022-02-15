@@ -2,7 +2,7 @@
 $(document).ready(function(){
     /*Mobile Menu Toggle Functionality*/
     $('.nav__hamburger-menu').click(() => {
-        $('.nav__list').toggleClass('hidden');
+        $('.nav__list--mobile').toggleClass('hidden');
     });
   
   });
