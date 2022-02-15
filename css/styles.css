@@ -14,6 +14,11 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /*Variables*/
 :root {
@@ -49,12 +54,12 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25vh;
+    height: 35vh;
     width: 100%;
 }
 
 .card {
-    height: 50vh;
+    height: 55vh;
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -98,7 +103,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -249,7 +254,7 @@ header {
     position: absolute;
     transform: translate(-50%, -50%);
     height: 10vh;
-    top: 35%;
+    top: 38%;
 }
 
 /*Main*/
@@ -350,3 +355,11 @@ header {
     margin-right: 1em;
 }
 
+.attribution {
+    margin-top: 3em;
+    color: var(--clr-dark-desaturated-cyan);
+}
+
+.attribution-link {
+    color: hsla(167, 40%, 24%, 0.048);
+}
