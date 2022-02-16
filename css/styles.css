@@ -313,7 +313,11 @@ body {
 }
 
 /*Image Grid*/
-.image-grid {
+.image-grid--desktop {
+    display: none;
+}
+
+.image-grid--mobile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -546,6 +550,18 @@ body {
     .testimonial-card__person-info {
         margin-top: auto;
         padding: 2em;
+    }
+
+    /*Image Grid*/
+    .image-grid--mobile {
+        display: none;
+    }
+
+    .image-grid--desktop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 100%;
     }
 
 
