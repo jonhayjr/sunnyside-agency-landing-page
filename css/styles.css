@@ -207,10 +207,9 @@ body {
     align-items: center;
     position: fixed;
     background-color: white;
-    top: 100px;
-    left: 15px;
-    width: calc(100vw - 50px);
-    height: 350px;
+    top: 125px;
+    left: 55px;
+    width: calc(90vw - 45px);
     margin-left: auto;
     margin-right: auto;
     z-index: 99;
@@ -468,6 +467,10 @@ body {
         width: 150px;
         height: 50px;
         margin: 0 0 0 2em;
+    }
+
+    .nav__list--mobile {
+        display: none;
     }
 
     .nav__list--desktop {
