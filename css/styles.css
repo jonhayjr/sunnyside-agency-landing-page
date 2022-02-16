@@ -350,12 +350,12 @@ body {
 
 .footer-nav__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .footer-nav__list-item {
-    margin-right: 2em;
+    margin-right: 3em;
 }
 
 .footer-nav__list-item:last-child {
@@ -424,6 +424,7 @@ body {
     .header {
         background-image: url('../images/desktop/image-header.jpg');
         height: 75vh;
+        width: 100%;
     }
 
     .header__heading {
@@ -439,25 +440,36 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 15vh;
+    }
+
+    .nav__logo {
+        max-width: 100%;
+        width: 150px;
+        height: 50px;
+        margin: 0 0 0 2em;
     }
 
     .nav__list--desktop {
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        margin-top: 1em;
+        justify-content: center;
+        height: 50px;
     }
 
     .nav__list-item {
-        margin-right: 2em;
+        margin-top: 0;
+        margin-right: 4em;
     }
 
     .nav__list-item:last-child {
         margin-top: 0;
+        margin-right: 0;
     }
 
     .nav__link {
         color: var(--clr-white);
+        display: block;
     }
 
     .nav__link--cta {
