@@ -385,10 +385,22 @@ body {
     /*Reusable styling*/
     .card {
         text-align: left;
+        padding: 0;
+        width: 100%;
+    }
+
+    .card__heading {
+        width: 50%;
+        font-size: 35px;
     }
 
     .card__link-div {
-        width: 75%;
+        width: 50%;
+    }
+
+    .card__paragraph {
+        width: 50%;
+        line-height: 1.75;
     }
 
     /*Header / Nav*/
@@ -448,9 +460,30 @@ body {
         height: 55vh;
     }
 
+    .transform > * {
+        flex: 1;
+    }
+
     .transform-image {
         background-image: url('../images/desktop/image-transform.jpg');
         height: auto;
+        flex: 1;
     }
+
+      /*Stand ↕  Section*/
+      .stand-out {
+        display: flex;
+        height: 55vh;
+    }
+
+    .stand-out > * {
+        flex: 1;
+    }
+
+    .stand-out-image {
+        background-image: url('../images/desktop/image-stand-out.jpg');
+        height: auto;
+    }
+
 
 }
