@@ -344,7 +344,7 @@ body {
     text-align: center;
     background-color: hsla(168, 34%, 41%, 0.589);
     padding: 4em;
-    height: 35vh;
+    height: auto;
 }
 
 .footer-logo {
